@@ -152,7 +152,7 @@ void addContact(Contact *contacts, int &totalContacts) {
 
     cout << "Enter Phone: " << endl << "> ";
     getline(cin, phone);
-    contacts[totalContacts].phone = stoi(phone);
+    
 
     cout << "Enter Email: " << endl << "> ";
     getline(cin, contacts[totalContacts].email);
@@ -177,7 +177,7 @@ void editContact(Contact *contacts, int position) {
 
     cout << "Enter Phone (" << contacts[position].phone << "): " << endl << "> ";
     getline(cin, phone);
-    contacts[position].phone = stoi(phone);
+    
 
     cout << "Enter Email (" << contacts[position].email << "): " << endl << "> ";
     getline(cin, contacts[position].email);
